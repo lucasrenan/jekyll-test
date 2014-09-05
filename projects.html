@@ -1,0 +1,22 @@
+---
+layout: page
+title: Projects
+permalink: /projects/
+---
+
+<div class="home">
+
+  <ul class="post-list">
+    {% for project in site.categories.projects %}
+      <li>
+        <span class="post-meta">{{ project.date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+          {{ project.title }}
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+
+</div>
+
